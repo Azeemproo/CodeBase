@@ -1,0 +1,551 @@
+{
+  "totalQuestions": 3878,
+  "count": 20,
+  "problemsetQuestionList": [
+    {
+      "acRate": 57.2222999373122,
+      "difficulty": "Easy",
+      "freqBar": null,
+      "questionFrontendId": "1",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Two Sum",
+      "titleSlug": "two-sum",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "Hash Table",
+          "id": "VG9waWNUYWdOb2RlOjY=",
+          "slug": "hash-table"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 48.1251672601809,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "2",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Add Two Numbers",
+      "titleSlug": "add-two-numbers",
+      "topicTags": [
+        {
+          "name": "Linked List",
+          "id": "VG9waWNUYWdOb2RlOjc=",
+          "slug": "linked-list"
+        },
+        {
+          "name": "Math",
+          "id": "VG9waWNUYWdOb2RlOjg=",
+          "slug": "math"
+        },
+        {
+          "name": "Recursion",
+          "id": "VG9waWNUYWdOb2RlOjMx",
+          "slug": "recursion"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 38.6919339138043,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "3",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Longest Substring Without Repeating Characters",
+      "titleSlug": "longest-substring-without-repeating-characters",
+      "topicTags": [
+        {
+          "name": "Hash Table",
+          "id": "VG9waWNUYWdOb2RlOjY=",
+          "slug": "hash-table"
+        },
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        },
+        {
+          "name": "Sliding Window",
+          "id": "VG9waWNUYWdOb2RlOjU1ODIx",
+          "slug": "sliding-window"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 46.1417043579507,
+      "difficulty": "Hard",
+      "freqBar": null,
+      "questionFrontendId": "4",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Median of Two Sorted Arrays",
+      "titleSlug": "median-of-two-sorted-arrays",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "Binary Search",
+          "id": "VG9waWNUYWdOb2RlOjEx",
+          "slug": "binary-search"
+        },
+        {
+          "name": "Divide and Conquer",
+          "id": "VG9waWNUYWdOb2RlOjEy",
+          "slug": "divide-and-conquer"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 37.5000020299204,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "5",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Longest Palindromic Substring",
+      "titleSlug": "longest-palindromic-substring",
+      "topicTags": [
+        {
+          "name": "Two Pointers",
+          "id": "VG9waWNUYWdOb2RlOjk=",
+          "slug": "two-pointers"
+        },
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        },
+        {
+          "name": "Dynamic Programming",
+          "id": "VG9waWNUYWdOb2RlOjEz",
+          "slug": "dynamic-programming"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 53.7327603976088,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "6",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Zigzag Conversion",
+      "titleSlug": "zigzag-conversion",
+      "topicTags": [
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 31.6437569437977,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "7",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Reverse Integer",
+      "titleSlug": "reverse-integer",
+      "topicTags": [
+        {
+          "name": "Math",
+          "id": "VG9waWNUYWdOb2RlOjg=",
+          "slug": "math"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 20.7234494514065,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "8",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "String to Integer (atoi)",
+      "titleSlug": "string-to-integer-atoi",
+      "topicTags": [
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": false
+    },
+    {
+      "acRate": 60.3694445935011,
+      "difficulty": "Easy",
+      "freqBar": null,
+      "questionFrontendId": "9",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Palindrome Number",
+      "titleSlug": "palindrome-number",
+      "topicTags": [
+        {
+          "name": "Math",
+          "id": "VG9waWNUYWdOb2RlOjg=",
+          "slug": "math"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 30.6099100236211,
+      "difficulty": "Hard",
+      "freqBar": null,
+      "questionFrontendId": "10",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Regular Expression Matching",
+      "titleSlug": "regular-expression-matching",
+      "topicTags": [
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        },
+        {
+          "name": "Dynamic Programming",
+          "id": "VG9waWNUYWdOb2RlOjEz",
+          "slug": "dynamic-programming"
+        },
+        {
+          "name": "Recursion",
+          "id": "VG9waWNUYWdOb2RlOjMx",
+          "slug": "recursion"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": false
+    },
+    {
+      "acRate": 59.7024552637745,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "11",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Container With Most Water",
+      "titleSlug": "container-with-most-water",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "Two Pointers",
+          "id": "VG9waWNUYWdOb2RlOjk=",
+          "slug": "two-pointers"
+        },
+        {
+          "name": "Greedy",
+          "id": "VG9waWNUYWdOb2RlOjE3",
+          "slug": "greedy"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 70.6273803830545,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "12",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Integer to Roman",
+      "titleSlug": "integer-to-roman",
+      "topicTags": [
+        {
+          "name": "Hash Table",
+          "id": "VG9waWNUYWdOb2RlOjY=",
+          "slug": "hash-table"
+        },
+        {
+          "name": "Math",
+          "id": "VG9waWNUYWdOb2RlOjg=",
+          "slug": "math"
+        },
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 66.3937046074765,
+      "difficulty": "Easy",
+      "freqBar": null,
+      "questionFrontendId": "13",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Roman to Integer",
+      "titleSlug": "roman-to-integer",
+      "topicTags": [
+        {
+          "name": "Hash Table",
+          "id": "VG9waWNUYWdOb2RlOjY=",
+          "slug": "hash-table"
+        },
+        {
+          "name": "Math",
+          "id": "VG9waWNUYWdOb2RlOjg=",
+          "slug": "math"
+        },
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 47.2572502846754,
+      "difficulty": "Easy",
+      "freqBar": null,
+      "questionFrontendId": "14",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Longest Common Prefix",
+      "titleSlug": "longest-common-prefix",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        },
+        {
+          "name": "Trie",
+          "id": "VG9waWNUYWdOb2RlOjI3",
+          "slug": "trie"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 38.7523040464325,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "15",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "3Sum",
+      "titleSlug": "3sum",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "Two Pointers",
+          "id": "VG9waWNUYWdOb2RlOjk=",
+          "slug": "two-pointers"
+        },
+        {
+          "name": "Sorting",
+          "id": "VG9waWNUYWdOb2RlOjYxMDQ5",
+          "slug": "sorting"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 48.2207917174638,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "16",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "3Sum Closest",
+      "titleSlug": "3sum-closest",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "Two Pointers",
+          "id": "VG9waWNUYWdOb2RlOjk=",
+          "slug": "two-pointers"
+        },
+        {
+          "name": "Sorting",
+          "id": "VG9waWNUYWdOb2RlOjYxMDQ5",
+          "slug": "sorting"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 65.6916481973511,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "17",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Letter Combinations of a Phone Number",
+      "titleSlug": "letter-combinations-of-a-phone-number",
+      "topicTags": [
+        {
+          "name": "Hash Table",
+          "id": "VG9waWNUYWdOb2RlOjY=",
+          "slug": "hash-table"
+        },
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        },
+        {
+          "name": "Backtracking",
+          "id": "VG9waWNUYWdOb2RlOjE0",
+          "slug": "backtracking"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": false
+    },
+    {
+      "acRate": 40.2091908786877,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "18",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "4Sum",
+      "titleSlug": "4sum",
+      "topicTags": [
+        {
+          "name": "Array",
+          "id": "VG9waWNUYWdOb2RlOjU=",
+          "slug": "array"
+        },
+        {
+          "name": "Two Pointers",
+          "id": "VG9waWNUYWdOb2RlOjk=",
+          "slug": "two-pointers"
+        },
+        {
+          "name": "Sorting",
+          "id": "VG9waWNUYWdOb2RlOjYxMDQ5",
+          "slug": "sorting"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": false
+    },
+    {
+      "acRate": 51.1870421493304,
+      "difficulty": "Medium",
+      "freqBar": null,
+      "questionFrontendId": "19",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Remove Nth Node From End of List",
+      "titleSlug": "remove-nth-node-from-end-of-list",
+      "topicTags": [
+        {
+          "name": "Linked List",
+          "id": "VG9waWNUYWdOb2RlOjc=",
+          "slug": "linked-list"
+        },
+        {
+          "name": "Two Pointers",
+          "id": "VG9waWNUYWdOb2RlOjk=",
+          "slug": "two-pointers"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    },
+    {
+      "acRate": 43.8731261602912,
+      "difficulty": "Easy",
+      "freqBar": null,
+      "questionFrontendId": "20",
+      "isFavor": false,
+      "isPaidOnly": false,
+      "status": null,
+      "title": "Valid Parentheses",
+      "titleSlug": "valid-parentheses",
+      "topicTags": [
+        {
+          "name": "String",
+          "id": "VG9waWNUYWdOb2RlOjEw",
+          "slug": "string"
+        },
+        {
+          "name": "Stack",
+          "id": "VG9waWNUYWdOb2RlOjE1",
+          "slug": "stack"
+        }
+      ],
+      "hasSolution": true,
+      "hasVideoSolution": true
+    }
+  ]
+}
