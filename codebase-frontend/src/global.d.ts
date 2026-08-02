@@ -5,3 +5,4 @@ declare global {
     HSStaticMethods: IStaticMethods;
   }
 }
+declare module '*.css';

@@ -1,20 +1,25 @@
 import express from 'express';
+import bcrypt from 'bcryptjs';
 const app = express()
 const port = 4000
+import db from './db.js';
 import  jwt from "jsonwebtoken";
 import "dotenv/config";
+import cors from "cors";
 app.set("view engine", "ejs")
 app.use(express.urlencoded({extended:false}))
 app.use(express.static("public"))
 app.use(express.json())
-import {authMiddleware} from './middleware.js';
-import cors from "cors";
+
 
 app.use(cors({
-  origin: "http://localhost:5173" // your frontend URL
+  origin: ["http://localhost:5173", 'http://localhost:8080' ]// your frontend URL
 }));
 
-const users = [];
+import executeRoute from './execute.js';
+app.use(executeRoute);
+import {authMiddleware} from './middleware.js';
+
 const SUBMISSIONS = [];
 app.get('/', (req, res) => {
   res.send("hello world")
@@ -79,36 +84,94 @@ app.get('/signup', (req,res) => {
 })
 
 
-app.post('/api/signup', (req, res) => {
-  const {username, password } = req.body;
+// app.post('/api/signup', (req, res) => {
+//   const {username, password } = req.body;
 
-  const existingUser = users.find(u => u.username === username);
-  if (existingUser) return res.status(403).json({msg:'Username already exists.'});
+//   const existingUser = users.find(u => u.username === username);
+//   if (existingUser) return res.status(403).json({msg:'Username already exists.'});
 
-  users.push({username,password});
-  console.log(users)
-  res.json({
-    msg: "success"
-  })
-})
+//   users.push({username,password});
+//   console.log(users)
+//   res.json({
+//     msg: "success"
+//   })
+// })
+
+
+app.post('/api/signup', async (req, res) => {
+  const { username, password } = req.body;
+ 
+  if (!username || !password) {
+    return res.status(400).json({ msg: 'Username and password required' });
+  }
+ 
+  try {
+    // Check if user already exists
+    db.query('SELECT * FROM users WHERE username = ?', [username], async (err, results) => {
+      if (err) return res.status(500).json({ msg: 'Database error' });
+ 
+      if (results.length > 0) {
+        return res.status(403).json({ msg: 'Username already exists.' });
+      }
+ 
+      const hashedPassword = await bcrypt.hash(password, 10);
+ 
+      db.query(
+        'INSERT INTO users (username, password) VALUES (?, ?)',
+        [username, hashedPassword],
+        (err, result) => {
+          if (err) return res.status(500).json({ msg: 'Database error' });
+          res.json({ msg: 'success' });
+        }
+      );
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ msg: 'Server error' });
+  }
+});
+ 
+
+// app.post('/api/login', (req, res) => {
+//   const {username,password} = req.body
+//   const  user = users.find(u => u.username === username);
+//   if (!user) return  res.status(400).send("user not found")
+  
+//   if (user.password !== password){
+//     return res.status(403).json({msg:"incorrect password"})
+//   }
+  
+//   const token = jwt.sign({
+//     id : user.id
+//   },process.env.JWT_SECRET)
+
+
+//   return res.json({token});
+
+// })
+
 
 app.post('/api/login', (req, res) => {
-  const {username,password} = req.body
-  const  user = users.find(u => u.username === username);
-  if (!user) return  res.status(400).send("user not found")
-  
-  if (user.password !== password){
-    return res.status(403).json({msg:"incorrect password"})
-  }
-  
-  const token = jwt.sign({
-    id : user.id
-  },process.env.JWT_SECRET)
-
-
-  return res.json({token});
-
-})
+  const { username, password } = req.body;
+ 
+  db.query('SELECT * FROM users WHERE username = ?', [username], async (err, results) => {
+    if (err) return res.status(500).json({ msg: 'Database error' });
+ 
+    if (results.length === 0) {
+      return res.status(400).json({ msg: 'User not found' });
+    }
+ 
+    const user = results[0];
+    const isMatch = await bcrypt.compare(password, user.password);
+ 
+    if (!isMatch) {
+      return res.status(403).json({ msg: 'Incorrect password' });
+    }
+ 
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);
+    res.json({ token });
+  });
+});
 
 app.get('/login', (req,res) => {
   res.render("loginpage.ejs")
@@ -124,7 +187,10 @@ app.get('/problems', (req, res) => {
     res.json({
       problems: filteredPromblems
     })
-});     
+});    
+
+
+
 app.get('/problem/:id', (req, res) => {
   const id = req.params.id;
   console.log(id)

@@ -7,13 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-
-node_modules/
-dist/
-.env
-*.log
-.DS_Store
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -24,3 +17,12 @@ dist/
 *.njsproj
 *.sln
 *.sw?
+
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+
+ 
