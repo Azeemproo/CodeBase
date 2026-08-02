@@ -86,7 +86,6 @@ return (
       className="h-screen w-full overflow-hidden" 
       data-hs-layout-splitter='{ "horizontalSplitterClasses": "w-2 bg-gray-400 cursor-col-resize hover:bg-blue-500 transition-colors" }'
     >
-      /* 2. Group wrapper */
       <div className="flex h-full w-full" data-hs-layout-splitter-horizontal-group>
         
         {/* LEFT PANEL */}
