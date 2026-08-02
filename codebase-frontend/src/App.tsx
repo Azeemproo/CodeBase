@@ -27,7 +27,7 @@ function App() {
   const userData = { username, password }; 
 
   try {
-    const response = await fetch("http://localhost:4000/api/signup", {
+    const response = await fetch("https://codebase-pfth.onrender.com/api/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),
@@ -52,7 +52,7 @@ async function loginSubmit(e: any) {
   const userData = { username, password }; 
 
   try {
-    const response = await fetch("http://localhost:4000/api/login", {
+    const response = await fetch("https://codebase-pfth.onrender.com/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json"},
       body: JSON.stringify(userData),
