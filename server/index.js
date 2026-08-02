@@ -13,7 +13,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://codebase-pfth.onrender.com"]// your frontend URL
+  origin: ["http://localhost:5173", "https://code-base-six-nu.vercel.app"]// your frontend URL
 }));
 
 import executeRoute from './execute.js';
