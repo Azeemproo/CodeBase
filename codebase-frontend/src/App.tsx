@@ -17,6 +17,7 @@ import './App.css';
 function App() {
   const [signupMessage, setSignupMessage] = useState("");
   const [loginMessage, setLoginMessage] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   async function handleSubmit(e: any) {
     e.preventDefault();
@@ -72,15 +73,46 @@ function App() {
 
   return (
     <Router>
-      <div className="topnav flex flex-wrap items-center gap-x-6 gap-y-2 bg-[#0d1117] border-b border-[#232935] px-4 sm:px-6 py-3">
-        <span className="font-['IBM_Plex_Mono',monospace] text-[#e3b341] font-bold text-base sm:text-lg mr-0 sm:mr-8">
-          {"</>"} CodeBase
-        </span>
-        <a className="active text-[#e6edf3] hover:text-[#e3b341] text-sm">Home</a>
-        <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Signup">Signup</a>
-        <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Login">Login</a>
-        <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Problemset">Problemset</a>
-      </div>
+      <nav className="bg-[#0d1117] border-b border-[#232935] px-4 sm:px-6 py-3 relative">
+        <div className="flex items-center justify-between">
+          <span className="font-['IBM_Plex_Mono',monospace] text-[#e3b341] font-bold text-base sm:text-lg">
+            {"</>"} CodeBase
+          </span>
+
+          {/* Desktop links */}
+          <div className="hidden sm:flex items-center gap-6">
+            <a className="text-[#e6edf3] hover:text-[#e3b341] text-sm">Home</a>
+            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Signup">Signup</a>
+            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Login">Login</a>
+            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Problemset">Problemset</a>
+          </div>
+
+          {/* Hamburger button - mobile only */}
+          <button
+            className="sm:hidden text-[#e6edf3] p-1"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Toggle menu"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {menuOpen ? (
+                <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" />
+              )}
+            </svg>
+          </button>
+        </div>
+
+        {/* Mobile dropdown */}
+        {menuOpen && (
+          <div className="sm:hidden flex flex-col gap-1 mt-3 pt-3 border-t border-[#232935]">
+            <a className="text-[#e6edf3] hover:text-[#e3b341] text-sm py-2" onClick={() => setMenuOpen(false)}>Home</a>
+            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm py-2" href="/Signup" onClick={() => setMenuOpen(false)}>Signup</a>
+            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm py-2" href="/Login" onClick={() => setMenuOpen(false)}>Login</a>
+            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm py-2" href="/Problemset" onClick={() => setMenuOpen(false)}>Problemset</a>
+          </div>
+        )}
+      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Signup" element={<Signup handleSubmit={handleSubmit} message={signupMessage} />} />
