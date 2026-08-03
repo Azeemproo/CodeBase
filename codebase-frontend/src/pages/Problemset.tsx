@@ -60,10 +60,10 @@ export default function Problemset() {
 
         {/* list */}
         <div className="rounded-lg border border-[#232935] bg-[#11151c] overflow-hidden">
-          <div className="grid grid-cols-[3rem_1fr_6rem_5rem] gap-4 px-5 py-3 border-b border-[#232935] font-['IBM_Plex_Mono',monospace] text-xs text-[#5c6370] uppercase tracking-wide">
+          <div className="grid grid-cols-[2.5rem_1fr_5rem] sm:grid-cols-[3rem_1fr_6rem_5rem] gap-2 sm:gap-4 px-3 sm:px-5 py-3 border-b border-[#232935] font-['IBM_Plex_Mono',monospace] text-xs text-[#5c6370] uppercase tracking-wide">
             <span>#</span>
             <span>Title</span>
-            <span className="text-right">Acceptance</span>
+            <span className="text-right hidden sm:block">Acceptance</span>
             <span className="text-right">Difficulty</span>
           </div>
 
@@ -77,17 +77,17 @@ export default function Problemset() {
             <a
               key={p.questionFrontendId}
               href={`/Problem/${p.questionFrontendId}`}
-              className="grid grid-cols-[3rem_1fr_6rem_5rem] gap-4 px-5 py-3 items-center border-l-2 border-transparent hover:border-[#e3b341] hover:bg-[#161b22] transition-colors"
+              className="grid grid-cols-[2.5rem_1fr_5rem] sm:grid-cols-[3rem_1fr_6rem_5rem] gap-2 sm:gap-4 px-3 sm:px-5 py-3 items-center border-l-2 border-transparent hover:border-[#e3b341] hover:bg-[#161b22] transition-colors"
             >
               <span className="text-[#5c6370] text-sm font-['IBM_Plex_Mono',monospace]">
                 {p.questionFrontendId}
               </span>
-              <span className="text-[#e6edf3] truncate">{p.title}</span>
-              <span className="text-[#8b949e] text-sm font-['IBM_Plex_Mono',monospace] text-right">
+              <span className="text-[#e6edf3] truncate text-sm sm:text-base">{p.title}</span>
+              <span className="text-[#8b949e] text-sm font-['IBM_Plex_Mono',monospace] text-right hidden sm:block">
                 {typeof p.acRate === "number" ? p.acRate.toFixed(1) : p.acRate}%
               </span>
               <span
-                className={`text-sm font-['IBM_Plex_Mono',monospace] text-right ${
+                className={`text-xs sm:text-sm font-['IBM_Plex_Mono',monospace] text-right ${
                   DIFFICULTY_COLOR[p.difficulty] || "text-[#8b949e]"
                 }`}
               >
