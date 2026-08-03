@@ -81,10 +81,10 @@ function App() {
 
           {/* Desktop links */}
           <div className="hidden sm:flex items-center gap-6">
-            <a className="text-[#e6edf3] hover:text-[#e3b341] text-sm">Home</a>
-            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Signup">Signup</a>
-            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Login">Login</a>
-            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm" href="/Problemset">Problemset</a>
+            <a className="!text-[#e6edf3] hover:!text-[#e3b341] !no-underline text-sm" href="/">Home</a>
+            <a className="!text-[#c9d1d9] hover:!text-[#e3b341] !no-underline text-sm" href="/Signup">Signup</a>
+            <a className="!text-[#c9d1d9] hover:!text-[#e3b341] !no-underline text-sm" href="/Login">Login</a>
+            <a className="!text-[#c9d1d9] hover:!text-[#e3b341] !no-underline text-sm" href="/Problemset">Problemset</a>
           </div>
 
           {/* Hamburger button - mobile only */}
@@ -106,10 +106,10 @@ function App() {
         {/* Mobile dropdown */}
         {menuOpen && (
           <div className="sm:hidden flex flex-col gap-1 mt-3 pt-3 border-t border-[#232935]">
-            <a className="text-[#e6edf3] hover:text-[#e3b341] text-sm py-2" onClick={() => setMenuOpen(false)}>Home</a>
-            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm py-2" href="/Signup" onClick={() => setMenuOpen(false)}>Signup</a>
-            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm py-2" href="/Login" onClick={() => setMenuOpen(false)}>Login</a>
-            <a className="text-[#8b949e] hover:text-[#e3b341] text-sm py-2" href="/Problemset" onClick={() => setMenuOpen(false)}>Problemset</a>
+            <a className="!text-[#e6edf3] hover:!text-[#e3b341] !no-underline text-sm py-2" href="/" onClick={() => setMenuOpen(false)}>Home</a>
+            <a className="!text-[#c9d1d9] hover:!text-[#e3b341] !no-underline text-sm py-2" href="/Signup" onClick={() => setMenuOpen(false)}>Signup</a>
+            <a className="!text-[#c9d1d9] hover:!text-[#e3b341] !no-underline text-sm py-2" href="/Login" onClick={() => setMenuOpen(false)}>Login</a>
+            <a className="!text-[#c9d1d9] hover:!text-[#e3b341] !no-underline text-sm py-2" href="/Problemset" onClick={() => setMenuOpen(false)}>Problemset</a>
           </div>
         )}
       </nav>

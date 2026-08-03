@@ -4,3 +4,9 @@
 body {
     background-color: #ffffff;
 }
+
+nav a:link,
+nav a:visited {
+  color: inherit;
+  text-decoration: none;
+}
