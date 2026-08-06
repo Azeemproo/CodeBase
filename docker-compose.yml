@@ -5,6 +5,9 @@ services:
       - "4000:4000"
     env_file:
       - ./server/.env
+    dns:
+    - 8.8.8.8
+    - 8.8.4.4
     depends_on:
       - db
 
